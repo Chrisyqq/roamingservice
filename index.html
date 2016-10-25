@@ -4,31 +4,94 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="css/roamservice.css">
-    <script src="js"></script>
+    <link rel="stylesheet" href="font/iconfont.css">
+    <script src="js/jquery.min.js"></script>
 </head>
 <body>
     <div class="roam-head">
-        <input class="">
-        <input class="">
-        <button class=""></button>
-        <div class="login-button">请登录</div>
+        <div class="roam-head-m">
+            <input class="" placeholder="输入需要查询的手机">
+            <input class="" placeholder="要去的国家">
+            <button class="">查询</button>
+            <div class="login-button">
+                <i class="iconfont icon-person"></i>
+                请登录
+            </div>
+        </div>
     </div>
-    <div class="roam-head-back">
-        <div class="before-foreign-head">出国前</div>
-        <div class="at-foreign-head">在国外</div>
-        <div class="back-foreign-head">回国后</div>
+    <div class="roam-body">
+        <div class="roam-head-back">
+            <div class="before-foreign-head active">出国前</div>
+            <div class="at-foreign-head">在国外</div>
+            <div class="back-foreign-head">回国后</div>
+        </div>
+        <div class="before-foreign">
+            <div class="telephone-card-detail">
+                <div class="card-block card-block-data">
+                    <div class="card-block-title">卡类型</div>
+                    <div class="card-place"></div>
+                    <div class="card-data"><span></span><i class="iconfont"></i></div>
+                </div>
+                <div class="card-block phone-block-data card-support">
+                    <div class="card-block-title-none">
+                        <select>
+                            <option>苹果</option>
+                            <option>小米</option>
+                            <option>华为</option>
+                        </select>
+                        <select>
+                            <option>iphone6s</option>
+                            <option>iphone6</option>
+                            <option>iphone5s</option>
+                            <option>iphone5</option>
+                            <option>iphone7</option>
+                        </select>
+                    </div>
+                    <div class="card-place"></div>
+                    <div class="card-data"><span></span><i class="iconfont"></i></div>
+                </div>
+                <div class="card-block place-block-data card-support">
+                    <div class="card-block-title">国际漫游功能</div>
+                    <div class="card-place"></div>
+                    <div class="card-data"><span>已开通</span><i class="iconfont"></i></div>
+                </div>
+            </div>
+            <div class="country-time">
+                <div class="country">
+                    <div class="pic"></div>
+                    <div class="name"></div>
+                </div>
+                <div class="time-china"></div>
+                <div class="time-america"></div>
+            </div>
+        </div>
+
+        <div class="at-foreign">
+
+        </div>
+
+        <div class="back-foreign">
+
+        </div>
     </div>
-
-    <div class="before-foreign">
-
-    </div>
-
-    <div class="at-foreign">
-
-    </div>
-
-    <div class="back-foreign">
-
+    <div class="roam-foot"></div>
+    <div class="alert-box">
+        <div class="roam-login">
+            <div class="roam-login-head">
+                管理员登陆
+                <i class="iconfont icon-chacha"></i>
+            </div>
+            <div class="roam-login-input">
+                账号 : <input>
+            </div>
+            <div class="roam-login-input">
+                密码 : <input>
+            </div>
+            <div class="roam-login-button">
+                <button>立即登录</button>
+            </div>
+        </div>
     </div>
 </body>
+<script src="js/roamservice.js"></script>
 </html>
