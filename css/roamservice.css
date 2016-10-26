@@ -4,6 +4,7 @@ body{
     font-family: STHeiti;
     color: #a4a4a4;
     background: #f9f9f9;
+    overflow: auto;
 }
 /* head */
 .roam-head{
@@ -68,12 +69,20 @@ body{
 /* roam body */
 .roam-body{
     width: 990px;
-    height: auto;
     min-height: 600px;
     background: #ffffff;
     margin: 0 auto 0 auto;
     clear: both;
     padding-top: 30px;
+}
+.roam-body .roam-body-block{
+    display: none;
+}
+.roam-body .roam-body-block-all{
+    display: none;
+}
+.roam-body .at-foreign{
+    width: 100%;
 }
 .roam-head-back{
     width: 100%;
@@ -112,14 +121,18 @@ body{
     border-radius: 1px;
     float: left;
 }
-.before-foreign{
+.roam-body .before-foreign{
     width: 100%;
     height: auto;
     margin-top: 20px;
+    float: left;
+    background: #ffffff;
+    display: block;
 }
 .telephone-card-detail{
     width: 100%;
     height: 150px;
+    float: left;
 }
 .telephone-card-detail .card-block{
     width: 100%;
@@ -190,6 +203,243 @@ body{
     margin-left: 4px;
     font-size: 12px;
 }
+.country-time{
+    width: 100%;
+    height: 50px;
+    float: left;
+    background: #eaf9ff;
+    margin-top: 20px;
+}
+.country-time .country{
+    float: left;
+    width: auto;
+    height: 50px;
+    line-height: 50px;
+}
+.country-time .country .pic{
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    float: left;
+}
+
+.country-time .country .name{
+    float: left;
+    margin-left: 10px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+}
+.country-time .time-china{
+    width: auto;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 30px;
+    font-size: 13px;
+}
+.country-time .time-china span{
+    font-size: 16px;
+    font-weight: bolder;
+    color: #000000;
+    float: right;
+    margin-left: 10px;
+}
+.country-time .time-america{
+    width: auto;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 30px;
+    font-size: 13px;
+}
+.country-time .time-america span{
+    font-size: 16px;
+    font-weight: bolder;
+    color: #000000;
+    float: right;
+    margin-left: 10px;
+}
+.country-time .time-gap{
+    width: auto;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 30px;
+    font-size: 13px;
+}
+.country .pic img{
+    margin-top: 5px;
+    width: 100% !important;
+}
+.roam-introductions{
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+    background: #ffffff;
+}
+.roam-introductions .head{
+    width: 100%;
+    height: 30px;
+    float: left;
+    border-bottom: 1px solid #bfbfbf;
+}
+.roam-introductions .head .title{
+    width: 120px;
+    height: 26px;
+    border-top: 4px solid #12b7f5;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background: #f9f9f9;
+    color: #000000;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 26px;
+    letter-spacing: 1px;
+}
+.roam-introductions .left{
+    width: 120px;
+    height: auto;
+    float: left;
+    padding-top: 20px;
+}
+.roam-introductions .left .block{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-left: 20px;
+}
+.roam-introductions .left .block span{
+    font-size: 14px;
+    margin-left: 5px;
+    letter-spacing: 2px;
+}
+.roam-introductions .left .call{
+    border: 1px solid #6fd1c8;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    color: #6fd1c8;
+}
+.roam-introductions .left .call:hover{
+    border: none;
+    background: #6fd1c8;
+    height: 32px;
+    cursor: pointer;
+    color: #ffffff;
+}
+.roam-introductions .left .call-active{
+    border: none;
+    background: #6fd1c8;
+    height: 32px;
+    cursor: pointer;
+    color: #ffffff;
+}
+.roam-introductions .left .message{
+    border: 1px solid #f2c463;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    color: #f2c463;
+}
+.roam-introductions .left .message:hover{
+    border: none;
+    background: #f2c463;
+    height: 32px;
+    cursor: pointer;
+    color: #ffffff;
+}
+.roam-introductions .left .message-active{
+    border: none;
+    background: #f2c463;
+    height: 32px;
+    cursor: pointer;
+    color: #ffffff;
+}
+.roam-introductions .left .internet{
+    border: 1px solid #f5868e;
+    border-radius: 2px;
+    color: #f5868e;
+}
+.roam-introductions .left .internet:hover{
+    border: none;
+    background: #f5868e;
+    height: 32px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.roam-introductions .left .internet-active{
+    border: none;
+    background: #f5868e;
+    height: 32px;
+    cursor: pointer;
+    color: #ffffff;
+}
+.roam-introductions .right .right-block{
+    width: 830px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-height: 300px;
+    display: none;
+    float: left;
+}
+.roam-introductions .right .call-active-block{
+    display: block;
+    background: #6fd1c8;
+}
+.roam-introductions .right .message-active-block{
+    background: #f2c463;
+}
+.roam-introductions .right .internet-active-block{
+    font-size: 13px;
+    color: #333333;
+    font-weight: bolder;
+}
+.roam-introductions-body{
+    width: 100%;
+    float: left;
+    min-height: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.roam-introductions-body p{
+    font-size: 13px;
+    margin-left: 12px;
+    color: #333333;
+    font-weight: bolder;
+}
+/* at-foreign */
+.at-foreign{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    float: left;
+    background: #ffffff;
+}
+.at-foreign .at-foreign-body{
+    width: 950px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.at-foreign .at-foreign-body p{
+    font-size: 13px;
+    color: #333333;
+    font-weight: bolder;
+}
+/* back-foreign */
+.back-foreign{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    float: left;
+    background: #ffffff;
+}
+
+
+
+
 .card-support .card-place{
     color: #333333 !important;
 }
@@ -201,6 +451,7 @@ body{
     width: 100%;
     height: 30px;
     background: #ffffff;
+    float: left;
 }
 
 /* alert-box */
@@ -211,13 +462,33 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 20;
 }
 .roam-login{
     width: 400px;
     height: 280px;
     margin: 220px auto 0 auto;
+    opacity: 1;
+    -moz-opacity: 1;
     border: 1px solid #d1d1d1;
     z-index: 20;
+    animation: loginout ease 0.5s;
+    -webkit-animation: loginout ease 0.5s;
+}
+@keyframes loginout {
+    0% {
+        margin: 180px auto 0 auto;
+        opacity: 0;
+        -moz-opacity: 0;
+    }
+    100% {
+        margin: 220px auto 0 auto;
+        opacity: 1;
+        -moz-opacity: 1;
+    }
+}
+@-webkit-keyframes loginout {
+
 }
 .roam-login .roam-login-head{
     width: 100%;

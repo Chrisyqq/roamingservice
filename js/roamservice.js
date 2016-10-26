@@ -4,6 +4,35 @@
 var CardData="no";
 var PhoneData="yes";
 var RoameFature="yes";
+//mediate
+(function () {
+    var width=$("body").css("width", $(window).width());
+    $('.roam-service-page').css('width',width);
+})();
+//login
+(function () {
+    $('.login-button').click(function () {
+        if($('.login-button span').text()=="请登录"){
+            $('.alert-box').css('display','block');
+        }
+        if($('.login-button span').text()=="推出登录"){
+            $('.alert-box').css('display','block');
+            $('.login-button span').text('请登录');
+            $('.roam-body-block-all').css('display','none');
+            $('.login-button').removeClass('login-button-active');
+        }
+    });
+    $('.roam-login-head i').click(function () {
+        $('.alert-box').css('display','none');
+    });
+    $('.roam-login-button button').click(function () {
+        $('.alert-box').css('display','none');
+        $('.roam-body-block-all').css('display','block');
+        $('.login-button span').text('推出登录');
+        $('.login-button').addClass('login-button-active');
+    });
+})();
+//support or not
 (function () {
     if (CardData=="yes"){
         $('.telephone-card-detail .card-block-data').addClass('card-support');
@@ -38,4 +67,95 @@ var RoameFature="yes";
         $('.place-block-data .card-place').text('您暂未开通办理国际漫游功能.');
         $('.place-block-data .card-data span').text('未开通');
     }
+})();
+//select
+(function () {
+    $('#roamheadback .block').click(function () {
+        var a=$(this).index();
+        var thoseClass=$('#roamheadback .block');
+        switch(a){
+            case 0:
+                $('#roamheadback .block').removeClass('active');
+                thoseClass.eq(0).addClass('active');
+                $('.roam-body .roam-body-block').css('display','none');
+                $('.roam-body .roam-body-block').eq(0).css('display','block');
+                break;
+            case 1:
+                $('#roamheadback .block').removeClass('active');
+                thoseClass.eq(1).addClass('active');
+                $('.roam-body .roam-body-block').css('display','none');
+                $('.roam-body .roam-body-block').eq(1).css('display','block');
+                break;
+            case 2:
+                $('#roamheadback .block').removeClass('active');
+                thoseClass.eq(2).addClass('active');
+                $('.roam-body .roam-body-block').css('display','none');
+                $('.roam-body .roam-body-block').eq(2).css('display','block');
+                break;
+        }
+    })
+})();
+(function () {
+    $('#charges .block').click(function () {
+        var a=$(this).index();
+        var thoseClass=$('#charges .block');
+        switch(a){
+            case 0:
+                thoseClass.eq(0).removeClass('call-active');
+                thoseClass.eq(1).removeClass('message-active');
+                thoseClass.eq(2).removeClass('internet-active');
+                thoseClass.eq(0).addClass('call-active');
+                $('#charges .right-block').css('display','none');
+                $('#charges .right-block').eq(0).css('display','block');
+                break;
+            case 1:
+                thoseClass.eq(0).removeClass('call-active');
+                thoseClass.eq(1).removeClass('message-active');
+                thoseClass.eq(2).removeClass('internet-active');
+                thoseClass.eq(1).addClass('message-active');
+                $('#charges .right-block').css('display','none');
+                $('#charges .right-block').eq(1).css('display','block');
+                break;
+            case 2:
+                thoseClass.eq(0).removeClass('call-active');
+                thoseClass.eq(1).removeClass('message-active');
+                thoseClass.eq(2).removeClass('internet-active');
+                thoseClass.eq(2).addClass('internet-active');
+                $('#charges .right-block').css('display','none');
+                $('#charges .right-block').eq(2).css('display','block');
+                break;
+        }
+    })
+})();
+(function () {
+    $('#callstyle .block').click(function () {
+        var a=$(this).index();
+        var thoseClass=$('#callstyle .block');
+        switch(a){
+            case 0:
+                thoseClass.eq(0).removeClass('call-active');
+                thoseClass.eq(1).removeClass('message-active');
+                thoseClass.eq(2).removeClass('internet-active');
+                thoseClass.eq(0).addClass('call-active');
+                $('#callstyle .right-block').css('display','none');
+                $('#callstyle .right-block').eq(0).css('display','block');
+                break;
+            case 1:
+                thoseClass.eq(0).removeClass('call-active');
+                thoseClass.eq(1).removeClass('message-active');
+                thoseClass.eq(2).removeClass('internet-active');
+                thoseClass.eq(1).addClass('message-active');
+                $('#callstyle .right-block').css('display','none');
+                $('#callstyle .right-block').eq(1).css('display','block');
+                break;
+            case 2:
+                thoseClass.eq(0).removeClass('call-active');
+                thoseClass.eq(1).removeClass('message-active');
+                thoseClass.eq(2).removeClass('internet-active');
+                thoseClass.eq(2).addClass('internet-active');
+                $('#callstyle .right-block').css('display','none');
+                $('#callstyle .right-block').eq(2).css('display','block');
+                break;
+        }
+    })
 })();

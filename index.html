@@ -8,6 +8,7 @@
     <script src="js/jquery.min.js"></script>
 </head>
 <body>
+<div class="roam-service-page">
     <div class="roam-head">
         <div class="roam-head-m">
             <input class="" placeholder="输入需要查询的手机">
@@ -15,83 +16,171 @@
             <button class="">查询</button>
             <div class="login-button">
                 <i class="iconfont icon-person"></i>
-                请登录
+                <span>请登录</span>
             </div>
         </div>
     </div>
     <div class="roam-body">
-        <div class="roam-head-back">
-            <div class="before-foreign-head active">出国前</div>
-            <div class="at-foreign-head">在国外</div>
-            <div class="back-foreign-head">回国后</div>
+        <div class="roam-head-back" id="roamheadback">
+            <div class="block before-foreign-head active">出国前</div>
+            <div class="block at-foreign-head">在国外</div>
+            <div class="block back-foreign-head">回国后</div>
         </div>
-        <div class="before-foreign">
-            <div class="telephone-card-detail">
-                <div class="card-block card-block-data">
-                    <div class="card-block-title">卡类型</div>
-                    <div class="card-place"></div>
-                    <div class="card-data"><span></span><i class="iconfont"></i></div>
-                </div>
-                <div class="card-block phone-block-data card-support">
-                    <div class="card-block-title-none">
-                        <select>
-                            <option>苹果</option>
-                            <option>小米</option>
-                            <option>华为</option>
-                        </select>
-                        <select>
-                            <option>iphone6s</option>
-                            <option>iphone6</option>
-                            <option>iphone5s</option>
-                            <option>iphone5</option>
-                            <option>iphone7</option>
-                        </select>
+        <div class="roam-body-block-all">
+            <div class="roam-body-block before-foreign">
+                <div class="telephone-card-detail">
+                    <div class="card-block card-block-data">
+                        <div class="card-block-title">卡类型</div>
+                        <div class="card-place"></div>
+                        <div class="card-data"><span></span><i class="iconfont"></i></div>
                     </div>
-                    <div class="card-place"></div>
-                    <div class="card-data"><span></span><i class="iconfont"></i></div>
+                    <div class="card-block phone-block-data card-support">
+                        <div class="card-block-title-none">
+                            <select>
+                                <option>苹果</option>
+                                <option>小米</option>
+                                <option>华为</option>
+                            </select>
+                            <select>
+                                <option>iphone6s</option>
+                                <option>iphone6</option>
+                                <option>iphone5s</option>
+                                <option>iphone5</option>
+                                <option>iphone7</option>
+                            </select>
+                        </div>
+                        <div class="card-place"></div>
+                        <div class="card-data"><span></span><i class="iconfont"></i></div>
+                    </div>
+                    <div class="card-block place-block-data card-support">
+                        <div class="card-block-title">国际漫游功能</div>
+                        <div class="card-place"></div>
+                        <div class="card-data"><span>已开通</span><i class="iconfont"></i></div>
+                    </div>
                 </div>
-                <div class="card-block place-block-data card-support">
-                    <div class="card-block-title">国际漫游功能</div>
-                    <div class="card-place"></div>
-                    <div class="card-data"><span>已开通</span><i class="iconfont"></i></div>
+                <div class="country-time">
+                    <div class="country">
+                        <div class="pic">
+                            <img src="img/america.png">
+                        </div>
+                        <div class="name">美国</div>
+                    </div>
+                    <div class="time-china">
+                        当地时间 : <span>20:46:12</span>
+                    </div>
+                    <div class="time-america">
+                        北京时间 : <span>20:46:12</span>
+                    </div>
+                    <div class="time-gap">
+                        比北京时间慢12小时
+                    </div>
+                </div>
+                <div class="roam-introductions" id="charges">
+                    <div class="head">
+                        <div class="title">资费说明</div>
+                    </div>
+                    <div class="left">
+                        <div class="block call call-active"><i class="iconfont icon-dianhua"></i><span>通话</span></div>
+                        <div class="block message"><i class="iconfont icon-duanxin"></i><span>短信</span></div>
+                        <div class="block internet"><i class="iconfont icon-wangluo"></i><span>上网</span></div>
+                    </div>
+                    <div class="right">
+                        <div class="right-block call-active-block">
+
+                        </div>
+                        <div class="right-block message-active-block">
+
+                        </div>
+                        <div class="right-block internet-active-block">
+                            <p>1、CDMA网络数据漫游时，手机应选择CTNET链接方式，上网卡使用方式与国内一致；</p>
+                            <p>2、GSM网络数据漫游时，需在手机GSM选项中新建“APN”，名称为“CTNET”，APN也填写为“CTNET”，其余为空，并重启手机(注：苹果电信版手机不用作任何设置)。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="roam-introductions" id="callstyle">
+                    <div class="head">
+                        <div class="title">拨打方式</div>
+                    </div>
+                    <div class="left">
+                        <div class="block call call-active"><i class="iconfont icon-dianhua"></i><span>通话</span></div>
+                        <div class="block message"><i class="iconfont icon-duanxin"></i><span>短信</span></div>
+                        <div class="block internet"><i class="iconfont icon-wangluo"></i><span>上网</span></div>
+                    </div>
+                    <div class="right">
+                        <div class="right-block call-active-block">
+
+                        </div>
+                        <div class="right-block message-active-block">
+
+                        </div>
+                        <div class="right-block internet-active-block">
+                            <p>1、CDMA网络数据漫游时，手机应选择CTNET链接方式，上网卡使用方式与国内一致；</p>
+                            <p>2、GSM网络数据漫游时，需在手机GSM选项中新建“APN”，名称为“CTNET”，APN也填写为“CTNET”，其余为空，并重启手机(注：苹果电信版手机不用作任何设置)。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="roam-introductions">
+                    <div class="head">
+                        <div class="title">拨打方式</div>
+                    </div>
+                    <div class="roam-introductions-body">
+                        <p>若开通数据漫游，建议用户在国外不使用时，关闭手机上的数据开关，以免产生不必要的费用。 </p>
+                        <p>高额费用提醒： 您已开通出国后可能会产生高额费用的产品，建议出国前取消； </p>
+                        <p>通信助理：拨打118114按9按0取消</p>
+                        <p>呼叫转移：已设置，建议拨号时输入*730，拨打确认取消</p>
+                        <p>其他提醒：</p>
+                        <p>1）彩铃、虚拟网、一号双机功能出境后均无法使用；</p>
+                        <p>2）在国际漫游、港澳台漫游时，请务确保机卡匹配（3G手机使用3G卡、4G手机使用4G卡）；</p>
+                        <p>相关推荐：</p>
+                        <p>1、流量包</p>
+                        <p>编辑短信"KTGMB"至10001开通国际漫游包天流量包。</p>
+                        <p>2、延伸服务</p>
+                        <p>◆国际机票预订建议话术：“如您有国际机票方面的需求或问题，可拨打中国电信号码百事通4008118114进行咨询”。</p>
+                    </div>
                 </div>
             </div>
-            <div class="country-time">
-                <div class="country">
-                    <div class="pic"></div>
-                    <div class="name"></div>
+
+            <div class="roam-body-block at-foreign">
+                <div class="at-foreign-body">
+                    <p>若客户在国外遇到任何问题，建议客户拨打7*24小时客服热线：18918910000</p>
+                    <p>资费：电信手机号码在境内/境外拨打免费，电信固话或其他运营商电话号码拨打按普通电话资费标准收费。</p>
+                    <p>拨打方式：1、国内：18918910000；2、在GSM网络国际漫游时：（+）8618918910000；3、在CDMA网络国际漫游时：（国际接入码）8618918910000。</p>
                 </div>
-                <div class="time-china"></div>
-                <div class="time-america"></div>
+
+            </div>
+
+            <div class="roam-body-block back-foreign">
+                <div class="roam-introductions">
+                    <div class="head">
+                        <div class="title">温馨提示</div>
+                    </div>
+                    <div class="roam-introductions-body">
+                        <p>提醒客户是否需要开通呼叫转移,通讯助理功能,核对话费信息.</p>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="at-foreign">
-
-        </div>
-
-        <div class="back-foreign">
-
-        </div>
     </div>
     <div class="roam-foot"></div>
-    <div class="alert-box">
-        <div class="roam-login">
-            <div class="roam-login-head">
-                管理员登陆
-                <i class="iconfont icon-chacha"></i>
-            </div>
-            <div class="roam-login-input">
-                账号 : <input>
-            </div>
-            <div class="roam-login-input">
-                密码 : <input>
-            </div>
-            <div class="roam-login-button">
-                <button>立即登录</button>
-            </div>
+</div>
+<div class="alert-box">
+    <div class="roam-login">
+        <div class="roam-login-head">
+            管理员登陆
+            <i class="iconfont icon-chacha"></i>
+        </div>
+        <div class="roam-login-input">
+            账号 : <input>
+        </div>
+        <div class="roam-login-input">
+            密码 : <input>
+        </div>
+        <div class="roam-login-button">
+            <button>立即登录</button>
         </div>
     </div>
+</div>
 </body>
 <script src="js/roamservice.js"></script>
 </html>
