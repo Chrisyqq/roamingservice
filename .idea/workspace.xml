@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b074c712-a2b2-4de2-a24f-1dd94e01c8b0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="b074c712-a2b2-4de2-a24f-1dd94e01c8b0" name="Default" comment="" />
     <ignored path="roamingservice.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -183,7 +181,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/apache-tomcat-7.0.70/webapps/ROOT/pokemon" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -267,12 +265,12 @@
       <workItem from="1477299091282" duration="2366000" />
       <workItem from="1477361016201" duration="13409000" />
       <workItem from="1477449226137" duration="18259000" />
-      <workItem from="1477535132856" duration="476000" />
+      <workItem from="1477535132856" duration="516000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34510000" />
+    <option name="totallyTimeSpent" value="34550000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="973" extended-state="6" />
