@@ -488,7 +488,16 @@ body{
     }
 }
 @-webkit-keyframes loginout {
-
+    0% {
+        margin: 180px auto 0 auto;
+        opacity: 0;
+        -moz-opacity: 0;
+    }
+    100% {
+        margin: 220px auto 0 auto;
+        opacity: 1;
+        -moz-opacity: 1;
+    }
 }
 .roam-login .roam-login-head{
     width: 100%;

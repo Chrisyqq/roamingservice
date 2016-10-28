@@ -4,6 +4,8 @@
 var CardData="no";
 var PhoneData="yes";
 var RoameFature="yes";
+var getplace="Us";//地址 给国旗上色
+
 //mediate
 (function () {
     var width=$("body").css("width", $(window).width());
@@ -32,6 +34,12 @@ var RoameFature="yes";
         $('.login-button').addClass('login-button-active');
     });
 })();
+//country
+(function () {
+    var Aplace=getplace.toUpperCase();
+    $('#country').append('<img src="countryflag/' + Aplace + '@3x.png">');
+})();
+
 //support or not
 (function () {
     if (CardData=="yes"){
