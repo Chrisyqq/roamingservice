@@ -24,6 +24,13 @@ body{
     margin-top: 11px;
     margin-right: 10px;
 }
+.roam-head-m .country-choose{
+    width: 200px;
+    height: 32px !important;
+    margin-top: 11px;
+    margin-right: 10px;
+    background: #ffffff;
+}
 .roam-head-m button{
     width: 60px;
     height: 26px;
